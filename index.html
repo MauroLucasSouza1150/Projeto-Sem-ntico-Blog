@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Semântico Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div id="navbar-inner">
+                <h2>Blog</h2>
+                <ul id="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Contatos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main id="posts-container">
+            <article class="post">
+                <img src="img/culinaria.jpg" alt="Culinária" />
+                <h3 class="title"><a href="#">Macarrão Acebolado</a></h3>
+                <p class="description">
+                    Macarrão tradicional feito com muito carinho, composto
+                    por cebola e orégano, uma ótima refeição de almoço.
+                </p>
+                <p class="author">Por: Mlucas</p>
+                <a href="#">Ler Mais sobre a receita</a>
+            </article>
+            <article class="post">
+                <img src="img/biscoito-rocon-eventos-comida.jpg" alt="Biscoito" />
+                <h3 class="title"><a href="#">Recheado de Biscoito</a></h3>
+                <p class="description">
+                    Uma simples merenda para seu fim de tarde ou podendo 
+                    ser sua sobremesa depois do Almoço, um biscoito recheado com 
+                    creme de avelã.
+                </p>
+                <p class="author">Por: Mlucas</p>
+                <a href="#">Ler Mais sobre a receita</a>
+            </article>
+            <article class="post">
+                <img src="img/utensilios-cozinha-cozinhar-comida.jpg" alt="Utensilios" />
+                <h3 class="title"><a href="#">Utensilios para Cozinha</a></h3>
+                <p class="description">
+                    Aqui tem alguns dos principais utensilios para sua cozinha, que são importantissímos 
+                    para a sua performance na hora de por a mão na massa.
+                </p>
+                <p class="author">Por: Mlucas</p>
+                <a href="#">Ler Mais sobre a receita</a>
+            </article>
+        </main>
+        <aside id="sidebar">
+            <section id="search">
+                <h4>Busca</h4>
+                <form>
+                    <input type="text"  placeholder="Procure no Blog">
+                    <input type="submit" value="Buscar">
+                </form>
+            </section>
+            <section id="categories">
+                <h4>Categorias</h4>
+                <nav>
+                    <ul>
+                        <li><a href="#">Bolo</a></li>
+                        <li><a href="#">Massas</a></li>
+                        <li><a href="#">Comidas</a></li>
+                        <li><a href="#">Sobremesas</a></li>
+                        <li><a href="#">Outras Receitas</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section id="tags">
+                <h4>Tags</h4>
+                <div class="tags-container">
+                    <a href="#">Frango</a>
+                    <a href="#">Pizzas</a>
+                    <a href="#">Doces</a>
+                    <a href="#">Salgados</a>
+                    <a href="#">Saladas</a>
+                    <a href="#">Tira-gosto</a>
+                    <a href="#">Petiscos</a>
+                </div>
+            </section>
+        </aside>
+    </div>
+    <footer>
+        <h2>Blog</h2>
+        <p>As melhores receitas para você</p>
+        <p>2023 &copy; Mlucas</p>
+    </footer>
+</body>
+</html>

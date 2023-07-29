@@ -1,0 +1,151 @@
+/* GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #5e0000;
+    transition: 0.4s;
+}
+
+a:hover {
+    color: #aa0000;
+}
+
+/* Navbar */
+#navbar {
+    padding: 1.5rem 2.5rem;
+    border-bottom: 2px solid #dbdbdb;
+}
+#navbar-inner {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Conteúdo Principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 3rem;
+    padding: 2rem 2.5rem;
+}
+
+#posts-container {
+    flex: 3 1 0;
+}
+.post {
+    margin-bottom: 2.5rem;
+}
+.post img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.title,
+.description,
+.author {
+    margin-bottom: 1rem;
+}
+.title {
+    font-size: 2rem;
+}
+.author {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Barra Lateral */
+#sidebar {
+    flex: 1 1 0;
+}
+
+#search,
+#categories,
+#tags {
+    padding: 1.5rem;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 1rem;
+}
+#search h4,
+#categories h4,
+#tags h4 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+#search form {
+    display: flex;
+}
+#search input {
+    padding: 10px;
+    border: 1px solid #dbdbdb;
+    margin-right: 5px;
+}
+#search input[type="submit"] {
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #aa0000;
+    color: #ffffff;
+    border: none;
+    transition: 0.5s;
+}
+#search input[type="submit"]:hover {
+    color: #ffffff;
+    background-color: #960000;
+}
+
+#categories li {
+    margin-bottom: 1rem;
+}
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.tags-container a {
+    background-color: #ddd;
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.3rem;
+}
+
+/* Rodapé da Página */
+footer {
+    text-align: center;
+    border-top: 2px solid #ddd;
+    padding: 2.5rem;
+    color: #5e0000;
+}
+footer h2,
+footer p {
+    margin-bottom: 1rem;
+}
+
+/* Responsivo */
+@media (max-width: 450px) {
+    .container {
+        flex-wrap: wrap;
+    }
+    
+    #navbar {
+        display: flex;
+    }
+    #navbar-inner {
+        flex-wrap: wrap;
+    }
+}
